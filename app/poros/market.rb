@@ -8,9 +8,15 @@ class Market
     @state = attrs[:state]
     @zip = attrs[:zip]
     @vendors = []
+    @fetched_vendors = false
+  end
+
+  def fetched_vendors?
+    @fetched_vendors
   end
 
   def add_vendors(data)
     @vendors = data.map { |vendor| Vendor.new(vendor) }
+    @fetched_vendors = true
   end
 end

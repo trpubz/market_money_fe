@@ -5,10 +5,15 @@ class MarketFacade
     @markets = data.map { |mrkt| Market.new(mrkt[:attributes]) }
   end
 
+  # @abstract The market object will exist but most likely without the vendors.  Check the market#fetched_vendors?
+  #   before making unnecessary API calls.
   def market(id)
-    data = Api::MarketService.market_vendors[:data]
-    market = markets.filter { |market| market.id == id }
+    market = markets.find{ |market| market.id == id }
 
-    market.add_vendors(data)
+    unless market.fetched_vendors?
+      data = Api::MarketService.market_vendors(id)[:data]
+      market.add_vendors(data)
+      return market
+    end
   end
 end
