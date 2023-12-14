@@ -6,7 +6,7 @@
   <thead>State</thead>
   <thead></thead>
   <% @markets.each do | market | %>
-    <tr id="mrkt-"<%= market.id %>>
+    <tr id="mrkt-<%= market.id %>">
       <td><%= market.name %></td>
       <td><%= market.city %></td>
       <td><%= market.state %></td>

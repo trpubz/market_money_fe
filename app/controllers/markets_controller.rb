@@ -1,7 +1,7 @@
 class MarketsController < ApplicationController
   def index
-    # get markets
-    @markets = nil
+    # get markets from application controller
+    @markets = app_markets
   end
 
   def show
