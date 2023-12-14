@@ -22,5 +22,21 @@ describe MarketFacade do
       expect(mrkt.fetched_vendors?).to eq true
       expect(mrkt.vendors.first).to be_a Vendor
     end
+
+    context "when a market is searched for a second time" do
+      it "skips the api call, and returns the object with the vendors", :vcr do
+        mrkt_facade = VCR.use_cassette("all markets") do
+          MarketFacade.new
+        end
+
+        mrkt = mrkt_facade.market("322474")
+        expect(mrkt.fetched_vendors?).to eq true
+
+        # set bad stub for API call to show it isn't called
+        allow(Api::MarketService).to receive(:market_vendors).and_return("bad data as show of force")
+        mrkt = mrkt_facade.market("322474")
+        expect(mrkt.vendors.first).to be_a Vendor
+      end
+    end
   end
 end
