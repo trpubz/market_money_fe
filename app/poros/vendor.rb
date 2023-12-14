@@ -11,4 +11,12 @@ class Vendor
     @credit_accepted = attrs[:credit_accepted]
     @description = attrs[:description]
   end
+
+  def credit_accepted?
+    if @credit_accepted
+      "YES"
+    else
+      "NO"
+    end
+  end
 end

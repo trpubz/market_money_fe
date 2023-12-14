@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
     if mf.nil?
       mf = MarketFacade.new
-      Rails.cache.write("market_facade", mf)
+      Rails.cache.write("market_facade", mf, expires_in: 48.hours)
     end
 
     mf
