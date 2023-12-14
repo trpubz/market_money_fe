@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :markets, only: [:index, :show]
+  resources :vendors, only: [:show]
 end

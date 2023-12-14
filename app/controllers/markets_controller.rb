@@ -1,7 +1,7 @@
 class MarketsController < ApplicationController
   def index
     # get markets from application controller
-    @markets = app_markets
+    @markets = app_market_facade.markets
   end
 
   def show

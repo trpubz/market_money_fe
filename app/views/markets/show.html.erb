@@ -1,0 +1,9 @@
+<h1><%= @market.name %></h1>
+<br>
+<h4><%= @market.address %></h4>
+<br>
+<h5>Vendors at our Market:</h5>
+<br>
+<% @market.vendors.each do | vendor | %>
+  <div><%= link_to "#{vendor.name}", vendor_path(vendor.id), method: :get %></div>
+<% end %>

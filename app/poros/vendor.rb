@@ -1,8 +1,10 @@
 class Vendor
   attr_reader :id, :name, :contact, :phone, :credit_accepted, :description
 
-  def initialize(attrs)
-    @id = attrs[:id]
+  def initialize(data)
+    @id = data[:id]
+
+    attrs = data[:attributes]
     @name = attrs[:name]
     @contact = attrs[:contact_name]
     @phone = attrs[:contact_phone]

@@ -11,6 +11,10 @@ class Market
     @fetched_vendors = false
   end
 
+  def address
+    "#{@address}\n#{@city}, #{@state} #{@zip}"
+  end
+
   def fetched_vendors?
     @fetched_vendors
   end
