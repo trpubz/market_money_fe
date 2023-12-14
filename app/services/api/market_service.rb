@@ -1,4 +1,10 @@
 class Api::MarketService
+  def self.market_vendors(id)
+    response = conn.get("markets/#{id}/vendors")
+
+    response_conversion(response)
+  end
+
   def self.markets
     response = conn.get("markets?per_page=99999")
 
@@ -12,4 +18,6 @@ class Api::MarketService
   def self.response_conversion(response)
     {status: response.status, data: JSON.parse(response.body, symbolize_names: true)[:data]}
   end
+
+
 end

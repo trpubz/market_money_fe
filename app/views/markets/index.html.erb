@@ -1,10 +1,12 @@
 <h1>Markets</h1>
 <br>
 <table>
-  <thead>Name</thead>
-  <thead>City</thead>
-  <thead>State</thead>
-  <thead></thead>
+  <thead>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th></th>
+  </thead>
   <% @markets.each do | market | %>
     <tr id="mrkt-<%= market.id %>">
       <td><%= market.name %></td>

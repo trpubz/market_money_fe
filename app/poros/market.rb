@@ -3,12 +3,14 @@ class Market
   def initialize(attrs)
     @id = attrs[:id]
     @name = attrs[:name]
+    @address = attrs[:street]
     @city = attrs[:city]
     @state = attrs[:state]
+    @zip = attrs[:zip]
     @vendors = []
   end
 
-  def add_vendors
-
+  def add_vendors(data)
+    @vendors = data.map { |vendor| Vendor.new(vendor) }
   end
 end

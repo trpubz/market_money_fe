@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322474/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"866f55fbd0b8237293506ee3ba13b900"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 987f1cba-26ee-4154-a6ff-5a24e9f66010
+      X-Runtime:
+      - '0.007218'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.25, instantiation.active_record;dur=0.11,
+        process_action.action_controller;dur=3.01
+      Content-Length:
+      - '7881'
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55297","type":"vendor","attributes":{"name":"Orange
+        County Olive Oil","description":"Handcrafted olive oil made from locally grown
+        olives","contact_name":"Syble Hamill","contact_phone":"1-276-593-3530","credit_accepted":false}},{"id":"56227","type":"vendor","attributes":{"name":"The
+        Vodka Vault","description":"Handcrafted vodka with a focus on unique and unusual
+        flavors","contact_name":"Rueben Parker DVM","contact_phone":"1-140-885-8633","credit_accepted":true}},{"id":"56172","type":"vendor","attributes":{"name":"The
+        Fabric Patch","description":"Upcycled fabric creations and accessories.","contact_name":"Hank
+        Simonis","contact_phone":"363.062.9508","credit_accepted":false}},{"id":"56489","type":"vendor","attributes":{"name":"Heavenly
+        Bodies Art","description":"Astronomy-themed art pieces and jewelry","contact_name":"Milo
+        Cole","contact_phone":"(532) 680-4621","credit_accepted":true}},{"id":"55254","type":"vendor","attributes":{"name":"Front
+        Range Flowers","description":"Fresh-cut flowers grown in the foothills of
+        the Rockies.","contact_name":"Alene Tromp","contact_phone":"(389) 157-1748","credit_accepted":false}},{"id":"56411","type":"vendor","attributes":{"name":"Tribal
+        Threads","description":"Handwoven textiles, clothing, and accessories from
+        indigenous cultures.","contact_name":"Denis Robel VM","contact_phone":"1-371-542-5452","credit_accepted":false}},{"id":"55020","type":"vendor","attributes":{"name":"The
+        Olive Grove","description":"Artisanal olive oils and vinegar","contact_name":"Many
+        Reichert","contact_phone":"(654) 579-0002","credit_accepted":true}},{"id":"55080","type":"vendor","attributes":{"name":"Salad
+        Daze","description":"Fresh salads and salad dressings.","contact_name":"Tristan
+        Johnson III","contact_phone":"1-341-922-1982","credit_accepted":false}},{"id":"56271","type":"vendor","attributes":{"name":"The
+        Whiskey Bar","description":"A rotating selection of whiskey and bourbon","contact_name":"Arturo
+        Dare","contact_phone":"(428) 653-5543","credit_accepted":true}},{"id":"55224","type":"vendor","attributes":{"name":"The
+        Good Egg","description":"Locally raised eggs and egg products","contact_name":"Dung
+        O''Reilly","contact_phone":"1-332-352-3573","credit_accepted":false}},{"id":"55891","type":"vendor","attributes":{"name":"Blown
+        Away","description":"Handmade glass items, including vases, bowls, and more.","contact_name":"Josef
+        Lesch DC","contact_phone":"1-789-922-2128","credit_accepted":true}},{"id":"56025","type":"vendor","attributes":{"name":"Lemonade
+        Stand","description":"Refreshing lemonade sorbets and ice creams.","contact_name":"Stacy
+        Stiedemann","contact_phone":"1-766-393-7526","credit_accepted":true}},{"id":"56329","type":"vendor","attributes":{"name":"Snack
+        Master","description":"A masterful selection of snacks that are sure to satisfy
+        even the pickiest of eaters.","contact_name":"Msgr. Deana Purdy","contact_phone":"1-806-936-2249","credit_accepted":true}},{"id":"55209","type":"vendor","attributes":{"name":"Dulse
+        Delight","description":"Wild harvested Maine seaweed products","contact_name":"Emanuel
+        Ward","contact_phone":"1-218-795-1628","credit_accepted":false}},{"id":"56104","type":"vendor","attributes":{"name":"Zesty
+        Bites","description":"Zesty and flavorful food creations.","contact_name":"Janita
+        Kuhic","contact_phone":"1-668-927-8922","credit_accepted":false}},{"id":"56208","type":"vendor","attributes":{"name":"The
+        Vineyardist","description":"Winery specializing in rare and hard-to-find varietals","contact_name":"Regena
+        Heaney","contact_phone":"320-637-1597","credit_accepted":true}},{"id":"56009","type":"vendor","attributes":{"name":"Ultimate
+        Cones","description":"Handcrafted waffle cones filled with creamy ice cream.","contact_name":"Brooke
+        Hauck","contact_phone":"(112) 380-4691","credit_accepted":false}},{"id":"55634","type":"vendor","attributes":{"name":"Artisanal
+        Blend","description":"Crafted with unique tea blends for a one-of-a-kind kombucha
+        taste.","contact_name":"Marguerite Bechtelar","contact_phone":"373.716.7452","credit_accepted":false}},{"id":"55310","type":"vendor","attributes":{"name":"SoCal
+        Smoothies","description":"Freshly blended smoothies made with local fruits
+        and veggies","contact_name":"Stacy Mayer DVM","contact_phone":"1-985-108-3111","credit_accepted":true}},{"id":"56140","type":"vendor","attributes":{"name":"Wooly
+        Warmth","description":"Hand-knitted woolen hats and gloves.","contact_name":"Gilberto
+        Yundt","contact_phone":"420.282.1133","credit_accepted":false}},{"id":"55785","type":"vendor","attributes":{"name":"Rooted
+        in Nature","description":"Vendor selling a wide variety of plants and flowers.","contact_name":"Frankie
+        Hickle","contact_phone":"1-223-201-7489","credit_accepted":false}},{"id":"55167","type":"vendor","attributes":{"name":"Corny
+        Cousins","description":"sells fresh sweet corn and corn-based products","contact_name":"Rosalia
+        Yundt CPA","contact_phone":"1-127-033-8122","credit_accepted":false}},{"id":"55920","type":"vendor","attributes":{"name":"Lavender
+        Latte","description":"Specialty coffee drinks infused with lavender and other
+        natural flavors.","contact_name":"Rep. Graig Effertz","contact_phone":"420-318-3041","credit_accepted":false}},{"id":"56038","type":"vendor","attributes":{"name":"Glaze
+        Craze","description":"Vibrant and colorful pottery with unique glaze patterns.","contact_name":"Maybell
+        Boyer","contact_phone":"320.383.5868","credit_accepted":false}},{"id":"54924","type":"vendor","attributes":{"name":"CHZ
+        PLZ","description":"This vendor offers a variety of artisanal cheeses.","contact_name":"Verna
+        Goodwin Ret.","contact_phone":"595-100-6344","credit_accepted":true}},{"id":"55350","type":"vendor","attributes":{"name":"Honey,
+        I''m Home","description":"honey and bee product vendor","contact_name":"Margarito
+        McDermott","contact_phone":"162.517.1333","credit_accepted":true}},{"id":"56272","type":"vendor","attributes":{"name":"The
+        Bitters Bar","description":"A variety of handcrafted bitters for cocktails","contact_name":"Franklyn
+        Wilderman","contact_phone":"259.057.8178","credit_accepted":false}},{"id":"55543","type":"vendor","attributes":{"name":"Purely
+        Plant-Based","description":"Vegan food products made from sustainable ingredients","contact_name":"Walter
+        Ward Ret.","contact_phone":"1-876-667-0047","credit_accepted":true}},{"id":"55291","type":"vendor","attributes":{"name":"Cali
+        Kombucha Co.","description":"Handcrafted kombucha in various flavors","contact_name":"Jeffry
+        Quigley","contact_phone":"1-852-843-9494","credit_accepted":false}},{"id":"56240","type":"vendor","attributes":{"name":"The
+        Rum Runner","description":"Small-batch rum distilled with locally-sourced
+        molasses","contact_name":"Isaias Olson DVM","contact_phone":"(223) 363-5867","credit_accepted":true}},{"id":"55313","type":"vendor","attributes":{"name":"Marin
+        Marinades","description":"Homemade marinades in unique flavors","contact_name":"Sen.
+        Sherman Spinka","contact_phone":"1-932-838-5623","credit_accepted":false}},{"id":"55668","type":"vendor","attributes":{"name":"Aqua
+        Vitae","description":"Refreshing, all-natural sodas with unique flavor combinations.","contact_name":"Lin
+        Russel","contact_phone":"(903) 260-5219","credit_accepted":true}},{"id":"55284","type":"vendor","attributes":{"name":"Rocky
+        Mountain Rice","description":"Organic rice grown in the high altitude of the
+        Rockies.","contact_name":"Devon Huels","contact_phone":"1-247-842-6603","credit_accepted":false}},{"id":"56206","type":"vendor","attributes":{"name":"The
+        Gin Mill","description":"Handcrafted gin and tonics, with a focus on botanicals","contact_name":"Rev.
+        Tad Langosh","contact_phone":"848-755-8522","credit_accepted":false}},{"id":"55055","type":"vendor","attributes":{"name":"Herb
+        Appeal","description":"Fresh herbs and herbal products.","contact_name":"Mattie
+        Doyle","contact_phone":"394.419.5264","credit_accepted":true}}]}'
+  recorded_at: Thu, 14 Dec 2023 02:19:18 GMT
+recorded_with: VCR 6.2.0
